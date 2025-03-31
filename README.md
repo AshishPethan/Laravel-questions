@@ -88,6 +88,7 @@ If a revoked token is used, the API will return a 401 Unauthorized response.
 
 
 
+
 What is a Route in Laravel?
 -> get, post, put, patch, delete, and options 
 
@@ -126,6 +127,9 @@ What Is Laravel Artisan?
 -> Artisan facilitates database management by allowing migrations and seedings in addition to code generation. This feature simplifies database operations and ensures consistency across development environments. Developers use Artisan to execute custom commands, which are defined to perform specific tasks tailored to the application's needs.
 
 
+
+
+
 Explain Laravel's Routing With An Example.
 -> Routes in Laravel are defined in the routes folder, typically in the web.php file for web routes. An example of a basic route in Laravel is given below.  
 
@@ -135,6 +139,7 @@ Route::get('/greeting', function () {
 Route::post('/userslist',[UserController::usersfunctionName])->name('users.list);
 
 -> Laravel supports various types of routes, including GET, POST, PUT, DELETE, and PATCH, to handle different types of HTTP requests. It allows for parameterized routes, middleware integration, and group routing, enhancing flexibility and control over route handling. For instance, to define a route with a parameter. /{id}
+
 
 
 
@@ -240,6 +245,8 @@ Route::prefix('v1')->group(function () {
 
 
 
+
+
 *****Database logical questions****
 
 What is foreign key?
@@ -280,6 +287,9 @@ SELECT DISTINCT salary
 FROM users 
 ORDER BY salary DESC 
 LIMIT 1 OFFSET 1;
+
+
+DISTINCT provide unique salary record only
 
 
 You have a users table with 1 million records. When fetching users, the query is very slow. How can you optimize this query?
