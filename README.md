@@ -249,6 +249,14 @@ Route::prefix('v1')->group(function () {
 
 *****Database logical questions****
 
+Normalization in SQL
+Normalization is the process of organizing data in a relational database to reduce data redundancy and improve data integrity. It involves dividing large tables into smaller, more manageable tables and defining relationships between them.
+
+
+ What is a Transaction in SQL?
+A transaction in SQL is a logical unit of work that consists of one or more SQL statements executed together. A transaction ensures that either all operations are successfully executed or none are applied to the database.
+
+
 What is foreign key?
 A foreign key is a column in a database table that creates a relationship between two tables by referencing the primary key of another table. 
 
@@ -337,6 +345,33 @@ How can you prevent SQL injection attacks in Laravel?
 
 
 **** For Practical ****
+
+1. Swap Two Numbers Without Using a Third Variable
+<?php
+$a = 10;
+$b = 20;
+
+$a = $a + $b;  // $a = 30
+$b = $a - $b;  // $b = 10 (original $a)
+$a = $a - $b;  // $a = 20 (original $b)
+
+echo "After swapping: a = $a, b = $b";
+?> 
+
+2. Find the Second Largest Number in an Array
+<?php
+function secondLargest($arr) {
+    $arr = array_unique($arr);
+    rsort($arr);
+    return $arr[1] ?? "Not enough elements";
+}
+
+$numbers = [10, 20, 4, 45, 99, 99];
+echo "Second Largest: " . secondLargest($numbers);
+?>
+
+
+
 
 Create signup and signin system in Laravel with two roles (Admin & User)
 
