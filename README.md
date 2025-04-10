@@ -1,3 +1,137 @@
+HTML
+
+difference between head and body tags
+
+
+
+
+
+PHP
+
+1. What is PHP?
+PHP (Hypertext Preprocessor) is a server-side scripting language mainly used for web development.
+
+2. PHP vs JavaScript vs Python
+PHP: Server-side scripting.
+JavaScript: Client-side scripting.
+Python: General-purpose programming.
+
+3. Echo vs Print
+echo: Faster, not return value, supports multiple arguments.
+print: Slower, returns 1, supports only one argument.
+
+4. Define a Constant
+define("SITE_NAME", "MyWebsite");
+const VERSION = "1.0";
+
+5. PHP Data Types & Type Conversion
+Types: int, float, string, bool, array, object, NULL, resource.
+PHP does automatic type conversion but allows explicit casting.
+
+Declaring a Variable
+
+php
+Copy
+Edit
+$name = "John";
+Single Quotes vs Double Quotes
+
+' (Single): No variable parsing.
+
+" (Double): Parses variables and escape sequences.
+
+Define a Function
+
+php
+Copy
+Edit
+function greet($name) {
+    return "Hello, " . $name;
+}
+Include vs Require
+
+include(): Warning if file missing, script continues.
+
+require(): Fatal error if file missing, script stops.
+
+Arrays in PHP
+
+php
+Copy
+Edit
+$fruits = ["Apple", "Banana"];
+echo $fruits[0]; // Apple
+Indexed vs Associative Arrays
+
+Indexed: Numeric keys.
+
+Associative: Named keys.
+
+Looping Through an Array (foreach)
+
+php
+Copy
+Edit
+foreach ($colors as $color) {
+    echo $color;
+}
+Public vs Private vs Protected
+
+public: Accessible everywhere.
+
+private: Accessible within the class.
+
+protected: Accessible within class & subclasses.
+
+Constructors & Destructors
+
+php
+Copy
+Edit
+class Car {
+    function __construct() { echo "Created"; }
+    function __destruct() { echo "Destroyed"; }
+}
+Sessions & Cookies
+
+Session: Stores data on the server.
+
+Cookie: Stores data in the browser.
+
+Set & Get Cookies
+
+php
+Copy
+Edit
+setcookie("user", "John", time() + 3600, "/");
+echo $_COOKIE["user"];
+Echo vs Print
+
+echo is faster, supports multiple arguments.
+
+print is slower, returns 1.
+
+MVC Architecture
+
+Model: Handles data.
+
+View: Displays UI.
+
+Controller: Handles user interaction.
+
+
+
+Laravel
+
+What is Laravel? Why do we use it?
+Explain the Laravel MVC architecture.
+What is the purpose of the .env file in Laravel?
+How do you define a route in Laravel?
+What is the difference between get(), post(), and any() methods in routing?
+Explain route model binding in Laravel.
+What is Blade? How does it help in Laravel?
+
+
 # Laravel-questions
 
 Laravel Questions and answers...
